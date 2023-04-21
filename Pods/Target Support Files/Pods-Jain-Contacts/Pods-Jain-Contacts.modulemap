@@ -1,0 +1,6 @@
+framework module Pods_Jain_Contacts {
+  umbrella header "Pods-Jain-Contacts-umbrella.h"
+
+  export *
+  module * { export * }
+}

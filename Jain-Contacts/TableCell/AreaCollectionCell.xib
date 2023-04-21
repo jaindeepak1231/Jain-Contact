@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AreaCollectionCell" customModule="Jain_Contacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="229" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXK-iP-u4A">
+                        <rect key="frame" x="8" y="4" width="213" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r07-O4-UHe">
+                                <rect key="frame" x="84.5" y="21.5" width="44" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r07-O4-UHe" firstAttribute="centerX" secondItem="UXK-iP-u4A" secondAttribute="centerX" id="2IU-nM-dlB"/>
+                            <constraint firstItem="r07-O4-UHe" firstAttribute="centerY" secondItem="UXK-iP-u4A" secondAttribute="centerY" id="YDZ-JO-1ZR"/>
+                            <constraint firstItem="r07-O4-UHe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UXK-iP-u4A" secondAttribute="leading" constant="12" id="b6p-bg-xaN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UXK-iP-u4A" secondAttribute="bottom" constant="4" id="4r9-0w-2zm"/>
+                <constraint firstItem="UXK-iP-u4A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="Aie-u3-HUn"/>
+                <constraint firstAttribute="trailing" secondItem="UXK-iP-u4A" secondAttribute="trailing" constant="8" id="Tso-f0-3X1"/>
+                <constraint firstItem="UXK-iP-u4A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="rDQ-Y8-dX3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="229" height="72"/>
+            <connections>
+                <outlet property="lbl_Title" destination="r07-O4-UHe" id="dbo-kM-Wj4"/>
+                <outlet property="view_BG" destination="UXK-iP-u4A" id="4vy-zs-k6v"/>
+            </connections>
+            <point key="canvasLocation" x="280.80000000000001" y="155.62218890554723"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellRegistertype1" rowHeight="189" id="KGk-i7-Jjw" customClass="cellRegistertype1" customModule="Jain_Contacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="186.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-Qx-H8m">
+                        <rect key="frame" x="291.5" y="44" width="11" height="11"/>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-o8-Bi4" customClass="PhoneTextF" customModule="Jain_Contacts" customModuleProvider="target">
+                        <rect key="frame" x="24" y="32" width="287" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dv1-o8-Bi4" secondAttribute="height" multiplier="1:0.122" id="6kC-tg-i1n"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    </textField>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-b1-M2A">
+                        <rect key="frame" x="24" y="34" width="50" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="LXh-wK-BSW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="tintColor" red="0.2274509804" green="0.23529411759999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.2274509804" green="0.23529411759999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="fontScaling" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dv1-o8-Bi4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="HmM-D6-625"/>
+                    <constraint firstItem="yNN-Qx-H8m" firstAttribute="trailing" secondItem="dv1-o8-Bi4" secondAttribute="trailing" id="IFC-Mb-XqN"/>
+                    <constraint firstItem="eoc-b1-M2A" firstAttribute="bottom" secondItem="dv1-o8-Bi4" secondAttribute="bottom" id="Ldv-MP-R59"/>
+                    <constraint firstItem="eoc-b1-M2A" firstAttribute="top" secondItem="dv1-o8-Bi4" secondAttribute="top" constant="2" id="MhQ-oh-1mQ"/>
+                    <constraint firstItem="yNN-Qx-H8m" firstAttribute="centerY" secondItem="dv1-o8-Bi4" secondAttribute="centerY" id="QKr-sW-Mnr"/>
+                    <constraint firstItem="eoc-b1-M2A" firstAttribute="leading" secondItem="dv1-o8-Bi4" secondAttribute="leading" id="YIE-lO-f0J"/>
+                    <constraint firstItem="dv1-o8-Bi4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pQp-jk-d1q"/>
+                    <constraint firstItem="dv1-o8-Bi4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="rU1-xE-1lW"/>
+                    <constraint firstAttribute="bottom" secondItem="dv1-o8-Bi4" secondAttribute="bottom" constant="10" id="xZj-Yc-BKn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCountryCode" destination="eoc-b1-M2A" id="Rnx-zQ-YoK"/>
+                <outlet property="constraintBottom" destination="xZj-Yc-BKn" id="rLl-Yv-XZI"/>
+                <outlet property="constraintLeading" destination="HmM-D6-625" id="xnL-cD-ZEg"/>
+                <outlet property="constraintTop" destination="rU1-xE-1lW" id="XI4-j1-Fjz"/>
+                <outlet property="img_arrow" destination="yNN-Qx-H8m" id="wol-mY-e1V"/>
+                <outlet property="textField" destination="dv1-o8-Bi4" id="QW6-Y4-C2d"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="118.29085457271366"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.otf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="ContactHeaderCell" customModule="Jain_Contacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-trans." translatesAutoresizingMaskIntoConstraints="NO" id="QDO-gI-HYr">
+                        <rect key="frame" x="0.0" y="-12" width="320" height="145.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2D-yx-ymu">
+                        <rect key="frame" x="22" y="12" width="49" height="97.5"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDi-ST-5e8">
+                        <rect key="frame" x="0.0" y="120.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.90000000000000002" id="nab-jM-kUA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="euU-Iu-2PK">
+                        <rect key="frame" x="280" y="52" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="euU-Iu-2PK" secondAttribute="height" multiplier="1:1" id="R5W-Nn-KrZ"/>
+                            <constraint firstAttribute="height" constant="18" id="RTb-Sj-sDd"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tDi-ST-5e8" secondAttribute="bottom" id="5uq-lg-qSr"/>
+                    <constraint firstItem="QDO-gI-HYr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8o7-w8-rmF"/>
+                    <constraint firstAttribute="trailing" secondItem="euU-Iu-2PK" secondAttribute="trailing" constant="22" id="Fgn-ia-DQc"/>
+                    <constraint firstItem="U2D-yx-ymu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="LXF-g8-24V"/>
+                    <constraint firstAttribute="trailing" secondItem="tDi-ST-5e8" secondAttribute="trailing" id="THf-cl-2bb"/>
+                    <constraint firstItem="QDO-gI-HYr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-12" id="TU0-Ho-cSQ"/>
+                    <constraint firstItem="U2D-yx-ymu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="Vii-rt-LN4"/>
+                    <constraint firstItem="tDi-ST-5e8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cxG-Xc-Pzt"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U2D-yx-ymu" secondAttribute="trailing" constant="22" id="gK1-bo-Za1"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="U2D-yx-ymu" secondAttribute="bottom" constant="8" id="jD6-Qi-EkI"/>
+                    <constraint firstItem="U2D-yx-ymu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qnr-nM-J8h"/>
+                    <constraint firstAttribute="trailing" secondItem="QDO-gI-HYr" secondAttribute="trailing" id="uqd-5O-K4F"/>
+                    <constraint firstAttribute="bottom" secondItem="QDO-gI-HYr" secondAttribute="bottom" constant="-12" id="yTw-h2-KgS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="euU-Iu-2PK" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="8dP-LS-7wg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img_BG" destination="QDO-gI-HYr" id="yBY-jQ-4xb"/>
+                <outlet property="img_Next" destination="euU-Iu-2PK" id="AIt-nb-pTo"/>
+                <outlet property="lbl_Title" destination="U2D-yx-ymu" id="7mf-qg-nWi"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="182.60869565217394"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Home-trans." width="337" height="37"/>
+    </resources>
+</document>

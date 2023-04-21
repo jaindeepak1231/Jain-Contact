@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellRegisterType2" rowHeight="147" id="KGk-i7-Jjw" customClass="cellRegisterType2" customModule="Jain_Contacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn2-if-s6F">
+                        <rect key="frame" x="24" y="10" width="273" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="fontScaling" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-is-fRK">
+                        <rect key="frame" x="24" y="40" width="273" height="82"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NKH-is-fRK" secondAttribute="height" multiplier="1:0.3" id="t5j-y9-yd9"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="20" id="mOw-tq-jsE">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wn2-if-s6F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6RB-pd-Xmz"/>
+                    <constraint firstItem="NKH-is-fRK" firstAttribute="leading" secondItem="Wn2-if-s6F" secondAttribute="leading" id="7SZ-ZG-P4b"/>
+                    <constraint firstItem="NKH-is-fRK" firstAttribute="top" secondItem="Wn2-if-s6F" secondAttribute="bottom" constant="14" id="KY5-Mf-KJE"/>
+                    <constraint firstItem="NKH-is-fRK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Mre-US-Xev"/>
+                    <constraint firstItem="Wn2-if-s6F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="TvU-vn-LVe"/>
+                    <constraint firstItem="Wn2-if-s6F" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Wr7-sT-eli"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NKH-is-fRK" secondAttribute="bottom" constant="10" id="ifw-0w-W29"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionGender" destination="NKH-is-fRK" id="Nbj-mp-Ss7"/>
+                <outlet property="constarintColBottom" destination="ifw-0w-W29" id="jIS-AK-oEz"/>
+                <outlet property="constarintLblBottom" destination="KY5-Mf-KJE" id="vd1-hs-mmH"/>
+                <outlet property="constarintLblLeading" destination="TvU-vn-LVe" id="8dR-ap-Jbr"/>
+                <outlet property="constarintLblTop" destination="6RB-pd-Xmz" id="8yg-Tm-K5c"/>
+                <outlet property="lblTitle" destination="Wn2-if-s6F" id="0wd-Gr-RhR"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="65.5"/>
+        </tableViewCell>
+    </objects>
+</document>

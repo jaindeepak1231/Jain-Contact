@@ -1,0 +1,54 @@
+PODS:
+  - AccountKit (4.35.0)
+  - Alamofire (4.7.3)
+  - InteractiveSideMenu (2.3)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+  - TPKeyboardAvoiding (1.3.2)
+
+DEPENDENCIES:
+  - AccountKit
+  - Alamofire
+  - InteractiveSideMenu
+  - Material
+  - SDWebImage (~> 3.7)
+  - SVProgressHUD
+  - SwiftyJSON
+  - TPKeyboardAvoiding
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AccountKit
+    - Alamofire
+    - InteractiveSideMenu
+    - Material
+    - Motion
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyJSON
+    - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  AccountKit: 870ccaf5d33facda9408783e28fbe68c5211e069
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  InteractiveSideMenu: d503a508c6d62a4d5d4372d9fb9e1795637a8e45
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+
+PODFILE CHECKSUM: 44990af7477c32b66c9ccc4280847838ff94ca87
+
+COCOAPODS: 1.5.3
